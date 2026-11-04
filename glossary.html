@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Health Glossary</title>
+<meta name="description" content="Acronyms and terms used in the Stanford Biodesign for Digital Health course: regulatory and policy, health data and technical, and health finance and payment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+html,body{margin:0;background:#ffffff}
+body{font-family:Inter,system-ui,sans-serif;color:#111111;font-size:15px;line-height:1.5}
+main{max-width:1180px;margin:0 auto;padding:32px 16px 64px}
+a{color:#10266C}a:hover{color:#0B1A4A}
+h1{font-size:32px;line-height:1.2;margin:0 0 4px}
+h1+p em{color:#555B66}
+h2{font-size:22px;margin:40px 0 8px;padding-top:16px;border-top:2px solid #111111}
+h3{font-size:16px;margin:28px 0 8px;color:#B83A1B}
+hr{display:none}
+table{border-collapse:collapse;width:100%;margin:8px 0 16px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #E5E5E1}
+th{background:#F4F4F4;font-weight:600}
+td:first-child{font-weight:600;white-space:nowrap}
+td:nth-child(2){color:#555B66;min-width:160px}
+.back{display:inline-block;margin-bottom:16px;font-size:14px}
+@media (max-width:700px){td:first-child{white-space:normal}}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">← Back to the one-page figure</a>
+<h1>Digital Health Glossary</h1>
+<p><em>Biodesign for Digital Health</em></p>
+<p>The acronyms and terms you'll keep running into across the regulatory, technical, and payment sides of the course, grouped by where you're most likely to hit them rather than alphabetically. A few terms that aren't acronyms are mixed in where leaving them out would be odd; those have a dash in the second column.</p>
+<hr />
+<h2>1. Regulatory and policy</h2>
+<h3>Federal agencies and offices</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HHS</td>
+<td>US Department of Health and Human Services</td>
+<td>The cabinet-level department that houses nearly every federal health agency on this list (CMS, FDA, CDC, NIH, OCR, ONC, SAMHSA), so most federal health policy is ultimately HHS policy.</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>Centers for Medicare &amp; Medicaid Services</td>
+<td>The agency that runs Medicare, Medicaid, CHIP, and the ACA marketplaces; it's the largest payer in the country, and commercial insurers tend to copy its coverage and payment decisions.</td>
+</tr>
+<tr>
+<td>CMMI</td>
+<td>Center for Medicare and Medicaid Innovation (the "Innovation Center")</td>
+<td>The arm of CMS created by the ACA to test new payment and delivery models (ACOs, InCK, ACCESS, ASPIRE) before they're expanded or shut down.</td>
+</tr>
+<tr>
+<td>CCIIO</td>
+<td>Center for Consumer Information and Insurance Oversight</td>
+<td>The CMS office that oversees the ACA marketplaces and the private insurance rules the ACA created.</td>
+</tr>
+<tr>
+<td>FDA</td>
+<td>Food and Drug Administration</td>
+<td>The agency that regulates drugs, devices, and the software that counts as a device, and decides whether a product can be sold at all; CDRH (the Center for Devices and Radiological Health) is the part that handles devices and digital health.</td>
+</tr>
+<tr>
+<td>CDC</td>
+<td>Centers for Disease Control and Prevention</td>
+<td>The federal public health agency, which touches digital health mostly through surveillance, immunization registries, and public health reporting standards.</td>
+</tr>
+<tr>
+<td>NIH</td>
+<td>National Institutes of Health</td>
+<td>The federal biomedical research funder, and the sponsor of large data programs like the All of Us precision medicine cohort.</td>
+</tr>
+<tr>
+<td>OCR</td>
+<td>Office for Civil Rights</td>
+<td>The HHS office that enforces HIPAA (it investigates breaches and levies the fines) as well as the ACA's nondiscrimination rules, including how they apply to clinical algorithms.</td>
+</tr>
+<tr>
+<td>ONC (now ASTP/ONC)</td>
+<td>Office of the National Coordinator for Health Information Technology, reorganized in 2024 under the Assistant Secretary for Technology Policy</td>
+<td>The federal agency that maintains rules and regulations behind interoperability in the US, certifies EHRs, and runs TEFCA; most people still just say ONC.</td>
+</tr>
+<tr>
+<td>SAMHSA</td>
+<td>Substance Abuse and Mental Health Services Administration</td>
+<td>The HHS agency for mental health and substance use, which also owns the 42 CFR Part 2 confidentiality rules for substance use treatment records.</td>
+</tr>
+<tr>
+<td>HRSA</td>
+<td>Health Resources and Services Administration</td>
+<td>The HHS agency that funds the safety net: FQHCs, rural health programs, and the 340B drug discount program.</td>
+</tr>
+<tr>
+<td>OIG</td>
+<td>Office of Inspector General</td>
+<td>HHS's internal watchdog, which audits federal health programs, investigates fraud, waste, and abuse, and can exclude providers from Medicare and Medicaid.</td>
+</tr>
+<tr>
+<td>FTC</td>
+<td>Federal Trade Commission</td>
+<td>The consumer protection and competition agency that goes after deceptive marketing claims and unfair data practices, which makes it the de facto privacy regulator for all the health apps HIPAA doesn't cover.</td>
+</tr>
+<tr>
+<td>FCC</td>
+<td>Federal Communications Commission</td>
+<td>The agency that regulates broadband and wireless spectrum, which matters for telehealth access and connected devices.</td>
+</tr>
+<tr>
+<td>DEA</td>
+<td>Drug Enforcement Administration</td>
+<td>The Justice Department agency that controls prescribing of controlled substances, including the still-temporary rules that let clinicians prescribe them over telehealth without an in-person visit.</td>
+</tr>
+<tr>
+<td>AG</td>
+<td>Attorney General (state)</td>
+<td>Each state's top lawyer, who can investigate and sue companies under state consumer protection, privacy, and AI laws, and who lately has been more aggressive on health tech than the federal agencies.</td>
+</tr>
+</tbody>
+</table>
+<h3>Laws, rules, and policy vocabulary</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HIPAA</td>
+<td>Health Insurance Portability and Accountability Act (1996)</td>
+<td>The federal law that sets the baseline privacy and security rules for health data held by providers, health plans, clearinghouses, and their vendors; people are often surprised to learn it doesn't cover most consumer apps.</td>
+</tr>
+<tr>
+<td>HITECH</td>
+<td>Health Information Technology for Economic and Clinical Health Act (2009)</td>
+<td>The landmark federal legislation that enabled much of the digital health industry, providing over $30B in incentives for health systems to adopt electronic health records (it also added breach notification and much bigger HIPAA penalties).</td>
+</tr>
+<tr>
+<td>ACA</td>
+<td>Affordable Care Act (2010)</td>
+<td>The health reform law that expanded Medicaid, created the insurance marketplaces, and set up CMMI, ACOs, and much of the value-based payment machinery we talk about in this course.</td>
+</tr>
+<tr>
+<td>Cures Act</td>
+<td>21st Century Cures Act (2016)</td>
+<td>The law that banned information blocking, required EHRs to expose standardized APIs, and carved certain clinical decision support software out of FDA's definition of a device.</td>
+</tr>
+<tr>
+<td>Information blocking</td>
+<td>—</td>
+<td>The Cures Act rule that providers, EHR vendors, and HIEs can't unreasonably interfere with access to or exchange of electronic health information, which is why patients now see notes and results the moment they're final.</td>
+</tr>
+<tr>
+<td>MACRA</td>
+<td>Medicare Access and CHIP Reauthorization Act (2015)</td>
+<td>The law that replaced the old Medicare physician payment formula with the Quality Payment Program, which pays clinicians partly on quality and cost performance.</td>
+</tr>
+<tr>
+<td>TEFCA</td>
+<td>Trusted Exchange Framework and Common Agreement</td>
+<td>The ONC-led framework for nationwide exchange, where a small number of designated networks (QHINs) agree to one set of rules so data can move anywhere in the country instead of through a patchwork of regional HIEs.</td>
+</tr>
+<tr>
+<td>HTI-1</td>
+<td>Health Data, Technology, and Interoperability rule</td>
+<td>ONC's 2023 rule that updated EHR certification and added the first federal transparency requirements for AI and predictive tools built into certified EHRs.</td>
+</tr>
+<tr>
+<td>Section 1557</td>
+<td>Section 1557 of the ACA</td>
+<td>The ACA's nondiscrimination provision, which OCR has applied to clinical algorithms and decision support tools, so a provider can be on the hook for using a tool that discriminates by race, sex, age, or disability.</td>
+</tr>
+<tr>
+<td>42 CFR Part 2</td>
+<td>Title 42, Code of Federal Regulations, Part 2</td>
+<td>The federal rule that gives substance use disorder treatment records more protection than HIPAA does, generally requiring patient consent before they can be shared (recently brought a bit closer to HIPAA).</td>
+</tr>
+<tr>
+<td>CFR</td>
+<td>Code of Federal Regulations</td>
+<td>Where federal regulations live once they're final; 45 CFR is HIPAA, 21 CFR is FDA, 42 CFR is CMS and public health.</td>
+</tr>
+<tr>
+<td>NPRM</td>
+<td>Notice of Proposed Rulemaking</td>
+<td>A draft regulation published in the Federal Register for public comment, the stage where industry and advocates try to shape a rule before it's final (an RFI, Request for Information, is the even earlier "we're thinking about this" step).</td>
+</tr>
+<tr>
+<td>AKS</td>
+<td>Anti-Kickback Statute</td>
+<td>The criminal law against paying or receiving anything of value for referrals of federally funded healthcare business, which is why "free" software or devices for providers have to fit a safe harbor; its civil cousin, the Stark Law, bars physicians from referring to entities they have a financial stake in.</td>
+</tr>
+<tr>
+<td>FCA</td>
+<td>False Claims Act</td>
+<td>The law that makes billing Medicare or Medicaid for things you didn't do (or shouldn't have billed) a federal offense, with whistleblower provisions that make it the government's main fraud enforcement tool.</td>
+</tr>
+<tr>
+<td>CPOM</td>
+<td>Corporate Practice of Medicine (doctrine)</td>
+<td>The state-law rule, strongest in California, New York, and Texas, that only licensed physicians can own medical practices or employ physicians, which is why telehealth companies are structured as an MSO contracting with a physician-owned professional corporation.</td>
+</tr>
+<tr>
+<td>MSO</td>
+<td>Management Services Organization</td>
+<td>The company that supplies the non-clinical side of a practice (technology, staff, billing, marketing) under a management agreement, the standard way to build a venture-backed clinical business under CPOM.</td>
+</tr>
+<tr>
+<td>IMLC</td>
+<td>Interstate Medical Licensure Compact</td>
+<td>The agreement among most states that speeds up getting licensed in several of them, which matters because a telehealth clinician has to be licensed where the patient is, not where the clinician sits (PSYPACT is the equivalent for psychologists).</td>
+</tr>
+<tr>
+<td>Scope of practice</td>
+<td>—</td>
+<td>State rules on what each type of licensed professional is allowed to do, and the reason only a human can be licensed to provide healthcare services today; an AI can't hold a license, so someone licensed has to be accountable for the care.</td>
+</tr>
+<tr>
+<td>Regulatory sandbox</td>
+<td>—</td>
+<td>A state program that lets a company test a product under relaxed rules with regulator oversight for a limited time; Utah's AI Office is the current example, with supervised experiments in AI-assisted prescription renewals.</td>
+</tr>
+<tr>
+<td>State AI laws</td>
+<td>—</td>
+<td>The growing set of state laws aimed at AI specifically (California, Colorado, Illinois, and New York among the first), covering things like disclosure when AI drafts patient communications, limits on AI-only therapy, and bias requirements for consequential decisions; these are moving far faster than anything federal.</td>
+</tr>
+<tr>
+<td>GDPR</td>
+<td>General Data Protection Regulation</td>
+<td>The EU's privacy law, which treats health data as a special category and gives individuals rights (access, erasure, portability) that go well beyond HIPAA; it applies the moment you have a European user.</td>
+</tr>
+</tbody>
+</table>
+<h3>FDA and device regulation</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FD&amp;C Act</td>
+<td>Federal Food, Drug, and Cosmetic Act (1938)</td>
+<td>The law that gives FDA its authority, and whose definition of a "device" (as amended by the Cures Act) decides whether your software is regulated at all.</td>
+</tr>
+<tr>
+<td>SaMD</td>
+<td>Software as a Medical Device</td>
+<td>Software that is itself the medical device (an app that diagnoses or guides treatment) rather than software embedded in a hardware device, which is SiMD, software in a medical device.</td>
+</tr>
+<tr>
+<td>Intended use</td>
+<td>—</td>
+<td>The purpose a product is marketed for, which is what FDA actually regulates; the same sensor can be an unregulated wellness product or a Class II device depending on what you claim it does.</td>
+</tr>
+<tr>
+<td>General wellness</td>
+<td>—</td>
+<td>FDA's policy of not regulating low-risk products meant only for general wellness (fitness, sleep, stress), which is where most consumer wearables sit; the line is drawn by your claims, not your hardware.</td>
+</tr>
+<tr>
+<td>CDS</td>
+<td>Clinical Decision Support</td>
+<td>Software that gives clinicians information or recommendations to support a decision; the Cures Act exempts it from FDA oversight only if, among other criteria, the clinician can independently review the basis for the recommendation rather than just trust the output.</td>
+</tr>
+<tr>
+<td>Class I / II / III</td>
+<td>Device risk classes</td>
+<td>FDA's three risk tiers: Class I is low risk and mostly exempt from review, Class II is moderate risk and where most SaMD lands, and Class III is high risk and needs full premarket approval.</td>
+</tr>
+<tr>
+<td>510(k)</td>
+<td>Premarket Notification (named for section 510(k) of the FD&amp;C Act)</td>
+<td>The most common FDA pathway, where you show your device is "substantially equivalent" to one already on the market; most AI-enabled devices have gone this route.</td>
+</tr>
+<tr>
+<td>De Novo</td>
+<td>De Novo classification request</td>
+<td>The pathway for novel low- to moderate-risk devices with no predicate to compare against, which creates a new device type that later products can file 510(k)s against.</td>
+</tr>
+<tr>
+<td>PMA</td>
+<td>Premarket Approval</td>
+<td>The most rigorous FDA pathway, reserved for Class III devices and usually requiring clinical trials.</td>
+</tr>
+<tr>
+<td>Breakthrough Devices</td>
+<td>Breakthrough Devices Program</td>
+<td>FDA's program that gives faster review and more interaction to devices that could meaningfully improve diagnosis or treatment of serious conditions.</td>
+</tr>
+<tr>
+<td>IRB</td>
+<td>Institutional Review Board</td>
+<td>The committee that reviews and approves research on human subjects, which you'll deal with for any study, pilot, or dataset involving real patients.</td>
+</tr>
+<tr>
+<td>GMLP</td>
+<td>Good Machine Learning Practice</td>
+<td>The ten principles FDA (with Health Canada and the UK's MHRA) published for developing AI and machine learning devices responsibly.</td>
+</tr>
+<tr>
+<td>PCCP</td>
+<td>Predetermined Change Control Plan</td>
+<td>A plan submitted with an AI-enabled device describing how the model will be updated or retrained over time, so the manufacturer doesn't have to go back to FDA for every change.</td>
+</tr>
+<tr>
+<td>QMSR</td>
+<td>Quality Management System Regulation</td>
+<td>FDA's updated quality system rules for device manufacturers, aligned with the international ISO 13485 standard and in effect since February 2026.</td>
+</tr>
+<tr>
+<td>RWD / RWE</td>
+<td>Real-World Data / Real-World Evidence</td>
+<td>Data collected outside traditional trials (EHRs, claims, wearables, registries) and the evidence built from it, which FDA increasingly accepts in regulatory decisions.</td>
+</tr>
+<tr>
+<td>TEMPO</td>
+<td>Technology-Enabled Meaningful Patient Outcomes pilot</td>
+<td>FDA's pilot, paired with CMS's ACCESS Model, that lets manufacturers use digital health devices with ACCESS patients before they have marketing authorization, in exchange for sharing real-world data with FDA.</td>
+</tr>
+</tbody>
+</table>
+<h3>Privacy law and HIPAA mechanics</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PHI</td>
+<td>Protected Health Information</td>
+<td>Any individually identifiable health information held by a HIPAA covered entity or its business associates; the same data in a consumer app with no covered entity behind it isn't PHI (ePHI is just the electronic version, and PII is the broader non-HIPAA term for anything that identifies a person).</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>Covered Entity</td>
+<td>The three kinds of organizations HIPAA directly regulates: providers that bill electronically, health plans, and clearinghouses.</td>
+</tr>
+<tr>
+<td>BA / BAA</td>
+<td>Business Associate / Business Associate Agreement</td>
+<td>A vendor that handles PHI on behalf of a covered entity, and the contract that makes it legally responsible for protecting that data; if you sell to health systems you'll sign a lot of these.</td>
+</tr>
+<tr>
+<td>Privacy Rule, Security Rule, Breach Notification Rule</td>
+<td>—</td>
+<td>HIPAA's three main regulations: who can use and share PHI and for what, the administrative, physical, and technical safeguards required to protect ePHI, and what you have to do (and whom you have to tell) when it's exposed.</td>
+</tr>
+<tr>
+<td>TPO</td>
+<td>Treatment, Payment, and Operations</td>
+<td>The three purposes for which HIPAA lets covered entities use and share PHI without asking the patient's permission.</td>
+</tr>
+<tr>
+<td>De-identification</td>
+<td>—</td>
+<td>Stripping data so it's no longer PHI, by either HIPAA's Safe Harbor method (remove 18 specific identifiers) or Expert Determination (a statistician certifies that re-identification risk is very small); a Limited Data Set keeps dates and geography and can be shared for research under a Data Use Agreement.</td>
+</tr>
+<tr>
+<td>COPPA</td>
+<td>Children's Online Privacy Protection Act</td>
+<td>The FTC-enforced law that restricts collecting personal data online from children under 13 without verifiable parental consent, which every pediatric app has to design around.</td>
+</tr>
+<tr>
+<td>FERPA</td>
+<td>Family Educational Rights and Privacy Act</td>
+<td>The federal law protecting student education records, which governs (instead of HIPAA) most health information held by schools and school-based programs.</td>
+</tr>
+<tr>
+<td>HBNR</td>
+<td>Health Breach Notification Rule</td>
+<td>The FTC rule requiring health apps and other companies outside HIPAA to notify users and the FTC when health data is breached or shared without permission.</td>
+</tr>
+<tr>
+<td>CCPA / CPRA</td>
+<td>California Consumer Privacy Act / California Privacy Rights Act</td>
+<td>California's general consumer privacy law, which covers the health data that falls outside HIPAA and has been the template for most other state privacy laws (Washington's My Health My Data Act is the first one aimed squarely at consumer health data).</td>
+</tr>
+<tr>
+<td>CMIA</td>
+<td>Confidentiality of Medical Information Act (California)</td>
+<td>California's medical privacy law, which is stricter than HIPAA in places and explicitly reaches some apps and vendors HIPAA doesn't.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Health data and technical terms</h2>
+<h3>Systems</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EHR / EMR</td>
+<td>Electronic Health Record / Electronic Medical Record</td>
+<td>The system where clinical care is documented, ordered, and billed; technically an EMR is one practice's record and an EHR is the longitudinal, shareable version, but in practice people use the terms interchangeably.</td>
+</tr>
+<tr>
+<td>PHR</td>
+<td>Personal Health Record</td>
+<td>A record the patient controls rather than the provider (Apple Health is the main modern example).</td>
+</tr>
+<tr>
+<td>HIE</td>
+<td>Health Information Exchange</td>
+<td>A regional or statewide organization (or the activity itself) that moves patient records between unaffiliated providers.</td>
+</tr>
+<tr>
+<td>CEHRT</td>
+<td>Certified EHR Technology</td>
+<td>An EHR that has passed ONC's certification program, which is the prerequisite for most federal quality and incentive programs and the lever ONC uses to push new standards into the market.</td>
+</tr>
+<tr>
+<td>CDSS</td>
+<td>Clinical Decision Support System</td>
+<td>Software that delivers alerts, reminders, order sets, or recommendations at the point of care, usually firing inside order entry (CPOE) or documentation.</td>
+</tr>
+<tr>
+<td>DSI</td>
+<td>Decision Support Intervention</td>
+<td>ONC's regulatory term (from HTI-1) for the predictive and evidence-based decision support tools inside certified EHRs, which now come with "source attribute" transparency requirements so users can see how a model was built and validated.</td>
+</tr>
+<tr>
+<td>ADT</td>
+<td>Admit, Discharge, Transfer (messages)</td>
+<td>The HL7 messages announcing that a patient was admitted, discharged, or moved, which are the backbone of most real-time care coordination and the event notifications hospitals are now required to send.</td>
+</tr>
+<tr>
+<td>MPI / EMPI</td>
+<td>(Enterprise) Master Patient Index</td>
+<td>The system that figures out which records across different systems belong to the same person, necessary because the US has no national patient identifier.</td>
+</tr>
+<tr>
+<td>PDMP</td>
+<td>Prescription Drug Monitoring Program</td>
+<td>The state databases of controlled substance prescriptions that clinicians have to check before prescribing opioids and similar drugs.</td>
+</tr>
+<tr>
+<td>eRx</td>
+<td>Electronic prescribing</td>
+<td>Sending prescriptions electronically from the EHR to the pharmacy, nearly all of it over the Surescripts network using the NCPDP SCRIPT standard.</td>
+</tr>
+<tr>
+<td>IIS</td>
+<td>Immunization Information System</td>
+<td>The state and local immunization registries that EHRs report vaccines to, which in pediatrics are often the most complete record a child has.</td>
+</tr>
+</tbody>
+</table>
+<h3>Standards and exchange</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HL7</td>
+<td>Health Level Seven International</td>
+<td>The standards organization behind most of the health data standards on this list (v2, CDA, FHIR); "level seven" refers to the application layer of the network model.</td>
+</tr>
+<tr>
+<td>HL7 v2</td>
+<td>Health Level Seven version 2</td>
+<td>The decades-old pipe-delimited messaging standard that still carries most hospital data traffic (lab results, ADT feeds, orders); ugly, but everywhere.</td>
+</tr>
+<tr>
+<td>C-CDA</td>
+<td>Consolidated Clinical Document Architecture</td>
+<td>HL7's XML document standard for packaging a clinical summary to send between systems; the Continuity of Care Document (CCD) is the most common type and what gets exchanged in most transitions of care.</td>
+</tr>
+<tr>
+<td>FHIR</td>
+<td>Fast Healthcare Interoperability Resources</td>
+<td>The data standard that is used to transfer health data between applications and EHRs, built on ordinary web technology (REST APIs and JSON) rather than older messaging formats.</td>
+</tr>
+<tr>
+<td>API</td>
+<td>Application Programming Interface</td>
+<td>The defined way one piece of software talks to another; in health IT "the API" almost always means a FHIR endpoint.</td>
+</tr>
+<tr>
+<td>SMART on FHIR</td>
+<td>Substitutable Medical Applications, Reusable Technologies</td>
+<td>The open standard for launching a third-party app inside an EHR and letting it read FHIR data with the user's permission, which is how most EHR-integrated apps are built.</td>
+</tr>
+<tr>
+<td>OAuth 2.0 / OpenID Connect</td>
+<td>—</td>
+<td>The web standards for authorization and identity that SMART on FHIR uses, so a patient or clinician can grant an app access without handing over a password.</td>
+</tr>
+<tr>
+<td>Bulk FHIR</td>
+<td>FHIR Bulk Data Access ("Flat FHIR")</td>
+<td>The FHIR specification for pulling data on a whole population at once instead of one patient at a time, which is what makes FHIR usable for analytics and payer exchange.</td>
+</tr>
+<tr>
+<td>USCDI</td>
+<td>United States Core Data for Interoperability</td>
+<td>The federally defined minimum set of data elements (problems, meds, labs, notes, and so on) that certified EHRs must be able to exchange, updated roughly annually; the US Core FHIR profiles spell out exactly how each element is represented.</td>
+</tr>
+<tr>
+<td>QHIN</td>
+<td>Qualified Health Information Network</td>
+<td>A network approved to participate in TEFCA and exchange with every other QHIN (Epic, eHealth Exchange, Health Gorilla, and CommonWell are examples).</td>
+</tr>
+<tr>
+<td>Patient Access API</td>
+<td>—</td>
+<td>The FHIR API that CMS requires Medicare Advantage, Medicaid, and marketplace plans to offer so members can pull their claims and clinical data into apps of their choice; the same rules require prior authorization APIs by 2027.</td>
+</tr>
+<tr>
+<td>CDS Hooks</td>
+<td>—</td>
+<td>The HL7 standard that lets an outside service push decision support "cards" into the EHR workflow at defined trigger points, like when an order is signed.</td>
+</tr>
+<tr>
+<td>X12 / EDI</td>
+<td>ASC X12 / Electronic Data Interchange</td>
+<td>The transaction standards HIPAA requires for claims, eligibility checks, and payments (the 837 claim and the 835 remittance are the ones you'll hear about).</td>
+</tr>
+<tr>
+<td>DICOM</td>
+<td>Digital Imaging and Communications in Medicine</td>
+<td>The standard format and protocol for medical images.</td>
+</tr>
+<tr>
+<td>OMOP</td>
+<td>Observational Medical Outcomes Partnership (common data model)</td>
+<td>The research data model, maintained by the OHDSI community, that maps data from different EHRs into one standard schema so the same analysis can run across institutions.</td>
+</tr>
+</tbody>
+</table>
+<h3>Clinical terminologies and code sets</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOINC</td>
+<td>Logical Observation Identifiers Names and Codes</td>
+<td>The standardized terminology that's used to describe observations like lab tests and vitals.</td>
+</tr>
+<tr>
+<td>SNOMED CT</td>
+<td>Systematized Nomenclature of Medicine, Clinical Terms</td>
+<td>The comprehensive clinical terminology for problems, findings, and procedures the way clinicians document them (as opposed to ICD, which is organized for billing).</td>
+</tr>
+<tr>
+<td>RxNorm</td>
+<td>—</td>
+<td>The National Library of Medicine's standardized names and codes for clinical drugs, which is what lets a system recognize that two differently branded products are the same medication.</td>
+</tr>
+<tr>
+<td>NDC</td>
+<td>National Drug Code</td>
+<td>FDA's product- and package-level identifier for each drug, used in pharmacy and claims.</td>
+</tr>
+<tr>
+<td>CVX</td>
+<td>Vaccine Administered codes</td>
+<td>The CDC code set for vaccines, used by EHRs and immunization registries.</td>
+</tr>
+</tbody>
+</table>
+<h3>AI and security</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NLP</td>
+<td>Natural Language Processing</td>
+<td>The branch of AI that reads and structures free text, which in healthcare means pulling meaning out of clinical notes.</td>
+</tr>
+<tr>
+<td>LLM</td>
+<td>Large Language Model</td>
+<td>The class of AI models (GPT, Claude, Gemini) trained on enormous amounts of text that now sits behind ambient documentation, patient message drafting, and most of the "AI in healthcare" conversation; note that most FDA-cleared AI devices are older-style machine learning models for imaging and signals, not LLMs.</td>
+</tr>
+<tr>
+<td>SOC 2</td>
+<td>System and Organization Controls 2</td>
+<td>The third-party audit report (from the AICPA) that health systems and payers almost always ask vendors for as proof that security controls actually work as described.</td>
+</tr>
+<tr>
+<td>HITRUST</td>
+<td>Health Information Trust Alliance (CSF certification)</td>
+<td>A healthcare-specific security certification that bundles HIPAA, NIST, ISO, and other requirements into one assessment; expensive to get, but it opens enterprise doors.</td>
+</tr>
+<tr>
+<td>MFA / SSO</td>
+<td>Multi-Factor Authentication / Single Sign-On</td>
+<td>Requiring a second factor beyond a password, and letting users log into many systems with one identity; both are baseline expectations for anything touching PHI.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Health finance and payment</h2>
+<h3>Payers and programs</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Medicare</td>
+<td>—</td>
+<td>The federal program for people 65 and over and some with disabilities, split into Part A (hospital), Part B (outpatient and physician), Part C (Medicare Advantage), and Part D (drugs); because CMS sets its rules nationally, Medicare is where most new payment ideas, including the digital health codes, show up first.</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Medicare Advantage (Medicare Part C)</td>
+<td>Private plans paid a risk-adjusted capitated rate by CMS to cover Medicare beneficiaries, now more than half of them, which makes MA plans a major buyer of anything that improves Star ratings or lowers cost.</td>
+</tr>
+<tr>
+<td>Medicaid</td>
+<td>—</td>
+<td>The joint federal-state program for low-income people that covers nearly half of US children and is administered differently in every state, which is why a "Medicaid strategy" is really 50 separate strategies.</td>
+</tr>
+<tr>
+<td>CHIP</td>
+<td>Children's Health Insurance Program</td>
+<td>The federal-state program for kids whose families earn too much for Medicaid but can't afford private coverage, usually run alongside Medicaid.</td>
+</tr>
+<tr>
+<td>MCO</td>
+<td>Managed Care Organization</td>
+<td>An arrangement where an insurance company gets paid on a per-capita basis to take care of a subgroup of the population; most Medicaid enrollees are now in MCOs rather than state-run fee-for-service Medicaid.</td>
+</tr>
+<tr>
+<td>EPSDT</td>
+<td>Early and Periodic Screening, Diagnostic, and Treatment</td>
+<td>Medicaid's benefit guarantee for anyone under 21, which entitles kids to all medically necessary care, including screening and developmental services adult Medicaid doesn't have to cover; it's the legal hook for a lot of pediatric services.</td>
+</tr>
+<tr>
+<td>ESI</td>
+<td>Employer-Sponsored Insurance</td>
+<td>Coverage through an employer, which is how most working-age adults are insured and why employer benefits are such a common sales channel for adult-focused digital health.</td>
+</tr>
+<tr>
+<td>Self-insured</td>
+<td>—</td>
+<td>An employer that pays its employees' claims itself and hires an insurer or a third-party administrator (TPA) only to process them, which gives it the freedom to buy digital health benefits directly; most large employers are self-insured.</td>
+</tr>
+<tr>
+<td>PBM</td>
+<td>Pharmacy Benefit Manager</td>
+<td>The middleman that manages drug benefits for plans and employers, negotiating rebates and deciding which drugs are covered.</td>
+</tr>
+<tr>
+<td>FQHC</td>
+<td>Federally Qualified Health Center</td>
+<td>Community health centers that get federal grants and enhanced Medicaid payment to serve underserved areas, paid a per-visit rate rather than fee-for-service, which changes what a digital tool has to prove to be worth it to them.</td>
+</tr>
+<tr>
+<td>SBHC</td>
+<td>School-Based Health Center</td>
+<td>A clinic located in a school, often run by an FQHC or hospital, that bills Medicaid and is one of the few places where the health and education sectors actually share patients and money.</td>
+</tr>
+</tbody>
+</table>
+<h3>How money moves</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FFS</td>
+<td>Fee-for-Service</td>
+<td>The traditional model where every visit, test, and procedure is billed separately, which rewards volume over outcomes and is what value-based care is trying to move away from.</td>
+</tr>
+<tr>
+<td>Capitation</td>
+<td>—</td>
+<td>A fixed payment per person per period to cover whatever care that person needs, which shifts financial risk from the payer to whoever accepts it.</td>
+</tr>
+<tr>
+<td>PMPM</td>
+<td>Per Member Per Month</td>
+<td>The standard unit of capitated payment and of digital health pricing to plans and health systems (a $2 PMPM contract for 100,000 members is $2.4M a year); PEPM, per employee per month, is the same idea when selling to employers.</td>
+</tr>
+<tr>
+<td>VBC</td>
+<td>Value-Based Care</td>
+<td>The umbrella term for payment arrangements that tie what a provider earns to quality and cost outcomes rather than volume.</td>
+</tr>
+<tr>
+<td>APM</td>
+<td>Alternative Payment Model</td>
+<td>CMS's term for any payment model that isn't pure fee-for-service (bundles, ACOs, capitation); "Advanced APMs" carry downside risk and earn bonuses under MACRA.</td>
+</tr>
+<tr>
+<td>ACO</td>
+<td>Accountable Care Organization</td>
+<td>A group of providers that agrees to be accountable for the total cost and quality of care for a defined population and keeps a share of any savings (the Medicare Shared Savings Program, MSSP, is the permanent and largest version).</td>
+</tr>
+<tr>
+<td>Shared savings</td>
+<td>—</td>
+<td>The mechanism where a provider gets a portion of the money saved against a spending benchmark; "two-sided" or "downside" risk means they also owe money if spending comes in over.</td>
+</tr>
+<tr>
+<td>DRG</td>
+<td>Diagnosis-Related Group</td>
+<td>The inpatient payment unit where Medicare pays a hospital a fixed amount per admission based on the diagnosis, regardless of what the stay actually cost.</td>
+</tr>
+<tr>
+<td>RVU</td>
+<td>Relative Value Unit</td>
+<td>The measure of the work, practice expense, and malpractice cost of each service, which (times a dollar "conversion factor") sets what Medicare pays for a CPT code; also how a lot of physicians' productivity and pay get measured.</td>
+</tr>
+<tr>
+<td>PFS</td>
+<td>Physician Fee Schedule</td>
+<td>CMS's annual rule setting Medicare payment for each code, which is also where new digital health codes (RPM, RTM, digital mental health treatment) get created each year.</td>
+</tr>
+<tr>
+<td>HCC</td>
+<td>Hierarchical Condition Category</td>
+<td>The risk adjustment coding system CMS uses to pay more for sicker populations, which is why documenting diagnoses completely is worth real money in Medicare Advantage and ACOs (and why there's so much fraud enforcement around it).</td>
+</tr>
+<tr>
+<td>MLR</td>
+<td>Medical Loss Ratio</td>
+<td>The share of premiums an insurer spends on medical care, which the ACA requires to be at least 80 to 85 percent, limiting what plans can spend on administration and profit (and shaping how they classify what they buy from vendors).</td>
+</tr>
+<tr>
+<td>PA</td>
+<td>Prior Authorization</td>
+<td>The insurer's requirement that certain services be approved before they're delivered, a major administrative burden and now the target of CMS rules requiring payers to automate it through APIs.</td>
+</tr>
+<tr>
+<td>NCD / LCD</td>
+<td>National / Local Coverage Determination</td>
+<td>Medicare's formal decisions on whether a service is covered nationwide (an NCD) or only in a region (an LCD, issued by the regional Medicare Administrative Contractor, or MAC, that processes claims there).</td>
+</tr>
+<tr>
+<td>RCM</td>
+<td>Revenue Cycle Management</td>
+<td>The whole back-office process from registration through coding, claims, denials, and collections; also a very large software category and where a lot of healthcare AI is actually making money today.</td>
+</tr>
+</tbody>
+</table>
+<h3>Codes and billing</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPT</td>
+<td>Current Procedural Terminology</td>
+<td>The AMA-owned code set for procedures and services that drives most outpatient billing, including the telehealth, RPM, and care management codes; Category III codes are temporary ones for new technologies that get tracked but usually not paid, the first step toward reimbursement for a new device or procedure.</td>
+</tr>
+<tr>
+<td>HCPCS</td>
+<td>Healthcare Common Procedure Coding System</td>
+<td>CMS's code set that includes CPT (Level I) plus Level II codes for supplies, drugs, equipment, and services CPT doesn't cover, including many of the newer Medicare care management codes (the ones starting with G).</td>
+</tr>
+<tr>
+<td>ICD-10-CM</td>
+<td>International Classification of Diseases, 10th Revision, Clinical Modification</td>
+<td>The diagnosis code set on every US claim, which is what justifies that a service was medically necessary; ICD-11 exists, but the US hasn't moved yet.</td>
+</tr>
+<tr>
+<td>E/M</td>
+<td>Evaluation and Management (codes)</td>
+<td>The CPT codes for office and hospital visits, the bread and butter of physician billing, now leveled by time or by the complexity of medical decision-making.</td>
+</tr>
+<tr>
+<td>NPI</td>
+<td>National Provider Identifier</td>
+<td>The 10-digit number every clinician and organization needs in order to bill, and the key you'll use to join provider data across datasets.</td>
+</tr>
+<tr>
+<td>RPM</td>
+<td>Remote Patient (or Physiologic) Monitoring</td>
+<td>The CPT codes that pay for supplying a patient a connected device and reviewing the data it sends, which is the main reimbursement pathway for device-based digital health.</td>
+</tr>
+<tr>
+<td>RTM</td>
+<td>Remote Therapeutic Monitoring</td>
+<td>The parallel codes for monitoring non-physiologic data like medication adherence, pain, or therapy exercises, which opened reimbursement to app-based products and to physical therapists and others who can't bill RPM.</td>
+</tr>
+<tr>
+<td>CCM / PCM</td>
+<td>Chronic Care Management / Principal Care Management</td>
+<td>Codes that pay a monthly fee for non-face-to-face care coordination of patients with chronic conditions, which is what many "care management" startups are actually billing.</td>
+</tr>
+<tr>
+<td>BHI / CoCM</td>
+<td>Behavioral Health Integration / Collaborative Care Model</td>
+<td>Codes that pay primary care practices for behavioral health delivered with a care manager and a consulting psychiatrist, the evidence-based model a lot of pediatric and adult mental health programs are built on.</td>
+</tr>
+<tr>
+<td>APCM</td>
+<td>Advanced Primary Care Management</td>
+<td>The Medicare codes introduced in 2025 that bundle care management into a monthly per-patient payment without time tracking, a step toward capitated primary care.</td>
+</tr>
+<tr>
+<td>DMHT</td>
+<td>Digital Mental Health Treatment (codes)</td>
+<td>The Medicare codes, also new in 2025, that pay for FDA-cleared digital mental health treatment devices prescribed by a clinician, the first real Medicare pathway for prescription digital therapeutics.</td>
+</tr>
+<tr>
+<td>Telehealth flexibilities</td>
+<td>—</td>
+<td>The pandemic-era Medicare waivers (home as an allowed site of care, no rural restriction, audio-only in some cases) that Congress has mostly extended in short increments rather than making permanent, which puts the telehealth industry back on a cliff every few months.</td>
+</tr>
+</tbody>
+</table>
+<h3>Quality, value, and population health</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HEDIS</td>
+<td>Healthcare Effectiveness Data and Information Set</td>
+<td>NCQA's standardized set of quality measures that health plans report (immunization rates, well-child visits, A1c control), which is what plans are graded on and therefore what they'll pay vendors to move.</td>
+</tr>
+<tr>
+<td>NCQA</td>
+<td>National Committee for Quality Assurance</td>
+<td>The nonprofit that accredits health plans and maintains HEDIS and the Patient-Centered Medical Home (PCMH) recognition program.</td>
+</tr>
+<tr>
+<td>Star Ratings</td>
+<td>—</td>
+<td>CMS's one-to-five star quality score for Medicare Advantage and Part D plans, which directly determines bonus payments and is why MA plans care so much about HEDIS and CAHPS.</td>
+</tr>
+<tr>
+<td>CAHPS</td>
+<td>Consumer Assessment of Healthcare Providers and Systems</td>
+<td>The AHRQ-developed patient experience surveys that feed into Star Ratings and hospital quality scores.</td>
+</tr>
+<tr>
+<td>Core Sets</td>
+<td>Child and Adult Core Sets</td>
+<td>The CMS-defined quality measure sets for Medicaid and CHIP; states have had to report the Child Core Set since 2024, and it's the closest thing pediatrics has to the HEDIS-driven incentives that adult care runs on.</td>
+</tr>
+<tr>
+<td>QPP / MIPS</td>
+<td>Quality Payment Program / Merit-based Incentive Payment System</td>
+<td>The MACRA program that adjusts Medicare physician payment up or down based on quality, cost, improvement activities, and interoperability performance.</td>
+</tr>
+<tr>
+<td>PI</td>
+<td>Promoting Interoperability</td>
+<td>The successor to Meaningful Use (the HITECH-era program that paid providers to adopt certified EHRs and use them in specific ways), now the part of MIPS and the hospital program that scores how providers actually use their EHRs.</td>
+</tr>
+<tr>
+<td>SDOH / HRSN</td>
+<td>Social Determinants of Health / Health-Related Social Needs</td>
+<td>The non-medical factors (housing, food, transportation, income) that shape health, and the individual-level version of them (this patient is food insecure), which Medicaid programs are increasingly screening for and paying to address.</td>
+</tr>
+<tr>
+<td>1115 waiver</td>
+<td>Section 1115 demonstration waiver</td>
+<td>The mechanism that lets a state run its Medicaid program differently from federal rules to test something new, which is how states fund things like housing supports, community health workers, and pediatric pilots.</td>
+</tr>
+<tr>
+<td>ILOS</td>
+<td>In Lieu of Services</td>
+<td>The Medicaid managed care option to pay for a substitute service (medically tailored meals, a digital program) instead of a covered one when it's cost-effective, a relatively new way to get non-traditional services paid for.</td>
+</tr>
+<tr>
+<td>ROI</td>
+<td>Return on Investment</td>
+<td>The number every payer and health system will ask you for, usually expected within a year, and the reason preventive and pediatric interventions, whose returns land years later and often in someone else's budget, have a harder time getting funded.</td>
+</tr>
+<tr>
+<td>Wrong-pocket problem</td>
+<td>—</td>
+<td>When the organization that pays for an intervention isn't the one that captures the savings (a school pays and Medicaid saves, or the other way around), which is one of the central reasons pediatric prevention is underfunded.</td>
+</tr>
+</tbody>
+</table>
+<h3>Federal models worth knowing</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InCK</td>
+<td>Integrated Care for Kids</td>
+<td>The CMMI model (2020 through 2026) that funded state and local partnerships to integrate physical, behavioral, and social services for Medicaid-covered children, with alternative payment models to support it.</td>
+</tr>
+<tr>
+<td>ASPIRE</td>
+<td>Accelerating State Pediatric Innovation Readiness and Effectiveness</td>
+<td>The CMMI model announced in March 2026 as the successor to InCK: a 10-year, up-to-five-state, $125M program that pays Medicaid providers to take accountability for the quality and cost of care for kids under 21 with (or at risk of) complex medical and behavioral needs.</td>
+</tr>
+<tr>
+<td>ACCESS</td>
+<td>Advancing Chronic Care with Effective, Scalable Solutions</td>
+<td>The CMMI model, with its first cohort starting in 2026, that pays organizations delivering technology-enabled care to Medicare patients with chronic conditions on outcomes rather than per service; it's the first Medicare payment model built around digital health companies, and the kind of thing pediatrics doesn't have yet.</td>
+</tr>
+</tbody>
+</table>
+<h3>Digital health business models (the taxonomy from our npj Digital Medicine paper)</h3>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Spelled out</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D2C</td>
+<td>Direct to Consumer</td>
+<td>The company sells access to its product straight to the patient or caregiver, with no insurer, employer, or provider in between (an app subscription, for example).</td>
+</tr>
+<tr>
+<td>B2B / B2B2C</td>
+<td>Business to Business / Business to Business to Consumer</td>
+<td>Selling to an organization (health system, plan, employer) rather than to individuals, and the variant where that organization then offers the product to its members or employees; most digital health revenue is one of these.</td>
+</tr>
+<tr>
+<td>SaaS</td>
+<td>Software as a Service</td>
+<td>Subscription software hosted by the vendor, which is how most digital health is sold to providers and plans and structurally looks a lot like capitation (a recurring per-unit fee).</td>
+</tr>
+<tr>
+<td>Billable to insurance</td>
+<td>—</td>
+<td>The company itself delivers a clinical service and bills a payer for it under a CPT code, which means it needs licensed clinicians, payer contracts, and a billing operation.</td>
+</tr>
+<tr>
+<td>Capitated revenue</td>
+<td>—</td>
+<td>The company sells access to its product on a subscription (usually PMPM) basis to a provider, health system, health plan, employer, or Medicaid program, whether or not the underlying service is billable to insurance; this was the most common model among the pediatric companies we studied.</td>
+</tr>
+<tr>
+<td>CBO</td>
+<td>Community-Based (or Community Benefit) Organization</td>
+<td>Nonprofits like food banks, family resource centers, and youth programs, which along with schools and government agencies are the "other" payers funding a lot of pediatric mental health and social-needs programs.</td>
+</tr>
+<tr>
+<td>DTx / PDT</td>
+<td>Digital Therapeutics / Prescription Digital Therapeutic</td>
+<td>Software that delivers a clinical intervention on its own (CBT for insomnia, for example) with evidence behind it; "prescription" DTx are FDA-cleared and ordered by a clinician, and until the 2025 DMHT codes had almost no reimbursement pathway.</td>
+</tr>
+</tbody>
+</table>
+</main>
+</body>
+</html>
